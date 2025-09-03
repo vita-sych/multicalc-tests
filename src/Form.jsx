@@ -24,7 +24,11 @@ function Form() {
         value={workingOperand}
         onChange={(e) => setWorkingOperand(e.target.value)}
       />
-      <button onClick={handleSubmit} disabled={workingOperand === ''}>
+      <button
+        aria-label="submit"
+        onClick={handleSubmit}
+        disabled={workingOperand === ''}
+      >
         Submit
       </button>
     </form>
